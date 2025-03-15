@@ -8,14 +8,20 @@ h1 {
     -webkit-text-stroke: 1.25px;
     -webkit-text-stroke-color: purple;
 }
-header{
+.roxo{
     color: purple;
 }
 main {
     align-items: center;
     text-align: center;
-    
 }
 img,video {
     border: 5px solid pink;
+}
+.organiz{
+    display: flex;
+}
+.vertCent{
+    width: 500px;
+    padding: 70px 0;
 }
