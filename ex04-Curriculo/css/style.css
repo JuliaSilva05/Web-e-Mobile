@@ -1,20 +1,43 @@
 body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8PNUPpAFZvzMlHCqde04G9f50nsnpEvXtz-cj3lwUj_AL40jFyw8O-UFA9X2sJ2Bm1A&usqp=CAU");
-    background-size: cover;
-    background-position: center;
+  background-image: url("https://img.freepik.com/premium-photo/blue-watercolor-abstract-background_3590-37.jpg?semt=ais_hybrid");
+  /*
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8PNUPpAFZvzMlHCqde04G9f50nsnpEvXtz-cj3lwUj_AL40jFyw8O-UFA9X2sJ2Bm1A&usqp=CAU");
+  */
+  background-size: cover;
+  background-position: center;
 }
 
+
+
+.cat{
+  color: black;
+  padding: 25px 30px;
+  background-color: yellow;
+  border-radius: 100px;
+  border: 15px dashed orange;
+}
+
+.wave-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  align-items: center;
+  text-align: center;
+}
 .wave-text span{
-    color: black;
-    display: inline-block;
-    animation: wave 2s ease-in-out infinite;
+  color: black;
+  display: inline-block;
+  align-items: center;
+  animation: wave 2s ease-in-out infinite;
 }
 .wave-text span:nth-child(1) {
   background-color: white;
   border-color:  red  orange orange red;
-  border-style: dashed;
+  border-style: solid;
   border-width: 5px;
-  /*border: 5px inset thistle;*/
   padding: 10px;
   border-radius: 150px;
   animation-delay: 0s;
@@ -22,7 +45,7 @@ body{
 .wave-text span:nth-child(3) {
   background-color: white;
   border-color: yellow yellowgreen yellowgreen yellow ;
-  border-style: dashed;
+  border-style: solid;
   border-width: 5px;
   padding: 10px;
   border-radius: 150px;
@@ -30,8 +53,8 @@ body{
 }
 .wave-text span:nth-child(5) {
   background-color: white;
-  border-color: rgb(127, 217, 255) violet violet rgb(127, 217, 255);
-  border-style: dashed;
+  border-color: blue violet violet blue;
+  border-style: solid;
   border-width: 5px;
   padding: 10px;
   border-radius: 150px;
