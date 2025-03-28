@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/style.css">
-    <title>Curriculo e Jogo</title>
+    <title>Curriculo</title>
   </head>
   <body>
     <header>
@@ -15,24 +15,41 @@
         <h1>
           <span>Júlia</span> <span> </span> <span>Silva</span> <span> </span> <span>Souto</span>
         </h1>
+        <div class="container">
+          <div class="bar1"></div>
+        </div>
       </div>
     </header>
     
     <main>
-      <div class="description">
+      <div class="curriculoEJogo">
         <pre>
-        É uma estudante de Ciência da Computação na Universidade Católica de Pernambuco,
-        atualmente no 5° período do curso. 
+        Estudante de Ciência da Computação na Universidade Católica de 
+        Pernambuco, atualmente no 5° período do curso. Tem conhecimento nas
+        linguagens de programação Python, Java, C e C++, assim como banco de
+        dados MySQL e criação de sites com HTML, CSS e JavaScript. Clique
+        no botão de hambúrguer para ver um exemplo!
         </pre>
-        <div class="botao">
-          <button onclick="MyFunction()"> Menu </button>
+
+
+        <div class="container" onclick="ShowGameDesc(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
 
-        <div id="myDIV">
-          Mostrando o conteúdo
+        <div id="gameDesc" class="regrasJogo">
+          <li>Jogo da Senha</li>
+          Sua mãe é uma grande amante de enigmas, e você veio visitá-la. Porém, ao chegar
+          na casa dela, você vê que ela armou um jogo: Para entrar, você
+          precisa acertar uma senha de 5 números. As regras são:<br>
+          - O número antes de "A" é a quantidade de dígitos que estão no lugar correto.<br>
+          - O número antes de "B" é a quantidade dos que estão corretos, mas no lugar errado.<br>
+          <a href="jogo.html">Jogar!</a>
         </div>
+        
 
-      </div>      
+      </div>
 
     </main>
     

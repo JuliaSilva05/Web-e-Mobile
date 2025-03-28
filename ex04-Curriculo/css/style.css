@@ -1,21 +1,59 @@
 body{
   background-image: url("https://img.freepik.com/premium-photo/blue-watercolor-abstract-background_3590-37.jpg?semt=ais_hybrid");
-  /*
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX8PNUPpAFZvzMlHCqde04G9f50nsnpEvXtz-cj3lwUj_AL40jFyw8O-UFA9X2sJ2Bm1A&usqp=CAU");
-  */
   background-size: cover;
   background-position: center;
 }
 
-.description{
-  text-align: center;
-  display: flex;
+.regrasJogo{
+  width:30vw;
+  display: none;
+  right: 5.9vw;
+  position: absolute;
+  padding: 25px;
+  padding-right: 75px;
+  background-color: pink;
+  text-align: left;
+  border: 6px solid violet;
 }
-.botao{
-  color: red;
+
+.container {
+  display: inline-block;
+  cursor: pointer;
   position: absolute;
   right: 0px;
-  padding: 10px;
+  padding: 20px;
+  background-color: pink;
+  border-left: 6px solid violet;
+  height: 500px;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: violet;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
+
+.curriculoEJogo{
+  text-align: center;
+  display: flex;
+  text-shadow: 5px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.5px;
+  font-size: large;
+}
+
+.botao{
+  position: absolute;
+  right: 0px;
+  padding: 20px;
 }
 
 .cat{

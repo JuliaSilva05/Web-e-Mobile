@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jogo</title>
+  </head>
+  <body>
+    <header>
+        <a href="index.html">Voltar</a>
+    </header>
+    
+    <main>
+        Regras:<br>
+        - 5 Números não-repetidos.<br>
+        - O número antes de "A" é a quantidade de dígitos que estão no lugar correto.<br>
+        - O número antes de "B" é a quantidade dos que estão corretos, mas no lugar errado.<br>
+        
+        
+
+        <button onclick="CreateNumber()">Recomeçar!</button>
+        
+        <input type="text" id="tentativa" maxlength="5" minlength="5">
+        <input type="submit" id="tentativa" onclick="Tries()">
+
+    </main>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
