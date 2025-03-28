@@ -7,7 +7,16 @@ body{
   background-position: center;
 }
 
-
+.description{
+  text-align: center;
+  display: flex;
+}
+.botao{
+  color: red;
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+}
 
 .cat{
   color: black;
