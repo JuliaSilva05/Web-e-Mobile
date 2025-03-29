@@ -50,6 +50,15 @@ function Tries(){
         
         historico.unshift(resposta[0],resposta[1],resposta[2]);
         console.log(historico);
+
+        document.getElementById("n").innerHTML = resposta[0];
+
+        //if (resposta[2] == "A5B0"){
+        //    document.getElementById("fim").innerHTML = "Parabéns! Você acertou. ".concat(nums);
+        //}
+        if (contando == 10){
+            document.getElementById("fim").innerHTML = "A senha era ".concat(nums);
+        }
         
     }
     else {
