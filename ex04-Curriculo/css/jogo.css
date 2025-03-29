@@ -1,0 +1,25 @@
+body{
+    background-image: url("https://img.freepik.com/premium-photo/blue-watercolor-abstract-background_3590-37.jpg?semt=ais_hybrid");
+    background-size: cover;
+    background-position: center;
+}
+header span{
+    background-color: pink;
+    padding: 1vw;
+    border: 0.25vw solid violet;
+    border-radius: 3vw;
+}
+main{
+    padding: 2vw;
+    display: block;
+    align-items: center;
+    color: blue;
+}
+table, th, td {
+    border: 0.125vw solid black;
+    border-collapse: collapse;
+}
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}

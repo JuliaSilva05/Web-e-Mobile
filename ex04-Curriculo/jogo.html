@@ -2,42 +2,40 @@
 <html>
   <head>
     <meta charset="UTF-8" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jogo.css">
     <title>Jogo</title>
   </head>
   <body>
     <header>
-        <a href="index.html">Voltar</a>
+        <span><a href="index.html">Voltar</a></span>
     </header>
     
     <main>
-        Regras:<br>
-        - 5 Números não-repetidos.<br>
-        - O número antes de "A" é a quantidade de dígitos que estão no lugar correto.<br>
-        - O número antes de "B" é a quantidade dos que estão corretos, mas no lugar errado.<br>
-        
-        
+        <div class="regras">
+          Regras:<br>
+          - 5 Números não-repetidos.<br>
+          - O número antes de "A" é a quantidade de dígitos que estão no lugar correto.<br>
+          - O número antes de "B" é a quantidade dos que estão corretos, mas no lugar errado.<br>
+          <button id="restart" onclick="RestartGame()">Recomeçar!</button>
+          <input type="text" id="escrever" maxlength="5" minlength="5">
+          <input type="submit" id="tentativa" onclick="Tries()">
+          <p id="fim"></p>
+        </div>
 
-        <button id="restart" onclick="RestartGame()">Recomeçar!</button>
-        
-        <input type="text" id="escrever" maxlength="5" minlength="5">
-        <input type="submit" id="tentativa" onclick="Tries()">
-
-        <p id="fim"></p>
-
-        <table id="historico">
-          <tr>
-            <th>N°</th>
-            <th>Tentativa</th>
-            <th>Feedback</th>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-
+        <div class="tabelaHistorico">
+          <table id="historico" class="center">
+            <tr>
+              <th>N°</th>
+              <th>Tentativa</th>
+              <th>Feedback</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
     </main>
     
     <script src="js/script.js"></script>
