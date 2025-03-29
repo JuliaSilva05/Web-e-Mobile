@@ -18,18 +18,23 @@
         
         
 
-        <button onclick="CreateNumber()">Recomeçar!</button>
+        <button id="restart" onclick="RestartGame()">Recomeçar!</button>
         
-        <input type="text" id="tentativa" maxlength="5" minlength="5">
+        <input type="text" id="escrever" maxlength="5" minlength="5">
         <input type="submit" id="tentativa" onclick="Tries()">
 
-        <p id="n"></p>
         <p id="fim"></p>
+
         <table id="historico">
           <tr>
-            <td class="n"></td>
-            <td class="t"></td>
-            <td class="f"></td>
+            <th>N°</th>
+            <th>Tentativa</th>
+            <th>Feedback</th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </table>
 

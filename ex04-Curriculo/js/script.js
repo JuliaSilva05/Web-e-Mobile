@@ -27,14 +27,14 @@ function CreateNumber(){
 
 
 
-const nums = CreateNumber();
-const tentativas = [];
+var nums = CreateNumber();
 const historico = [];
 var contando = 0;
+var reiniciar = true;
 
 function Tries(){
     // recebendo o input
-    let inputTry = document.getElementById('tentativa').value;
+    let inputTry = document.getElementById('escrever').value;
     // checando se todos os caracteres são entre 0 e 9
     let tudoCerto = 0;
     for (let j = 0; j < inputTry.length; j++){
@@ -48,22 +48,44 @@ function Tries(){
 
         var resposta = [contando, inputTry, Feedback(inputTry,nums)]
         
-        historico.unshift(resposta[0],resposta[1],resposta[2]);
-        console.log(historico);
+        //historico.unshift(resposta[0],resposta[1],resposta[2]);
+        //console.log(historico);
+        AddHistoric(resposta);        
 
-        document.getElementById("n").innerHTML = resposta[0];
-
-        //if (resposta[2] == "A5B0"){
-        //    document.getElementById("fim").innerHTML = "Parabéns! Você acertou. ".concat(nums);
-        //}
-        if (contando == 10){
-            document.getElementById("fim").innerHTML = "A senha era ".concat(nums);
+        if (resposta[2] == "5A0B"){
+            document.getElementById("fim").innerHTML = "Parabéns! Você acertou.";
+            console.log("acertou!");
+            var x = document.getElementById("tentativa");
+            if (x.style.display != "none") {
+                x.style.display = "none";
+            }
         }
-        
+        else if (contando == 10){
+            document.getElementById("fim").innerHTML = "A senha era ".concat(nums);
+            var x = document.getElementById("tentativa");
+            if (x.style.display != "none") {
+                x.style.display = "none";
+            }
+        }
     }
     else {
         alert("A senha deve ter 5 números!")
     }
+}
+
+function RestartGame(){
+    location.reload();
+}
+
+function AddHistoric(resposta){
+    var table = document.getElementById('historico');
+    var row = table.insertRow(1);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    cell1.innerHTML = resposta[0];
+    cell2.innerHTML = resposta[1];
+    cell3.innerHTML = resposta[2];
 }
 
 function Feedback(inputTry,nums){
