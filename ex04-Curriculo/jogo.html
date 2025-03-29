@@ -12,29 +12,34 @@
     
     <main>
         <div class="regras">
-          Regras:<br>
-          - 5 Números não-repetidos.<br>
-          - O número antes de "A" é a quantidade de dígitos que estão no lugar correto.<br>
-          - O número antes de "B" é a quantidade dos que estão corretos, mas no lugar errado.<br>
-          <button id="restart" onclick="RestartGame()">Recomeçar!</button>
-          <input type="text" id="escrever" maxlength="5" minlength="5">
-          <input type="submit" id="tentativa" onclick="Tries()">
+          <span>
+            Regras:<br>
+            - 5 Números não-repetidos.<br>
+            - O número antes de "A" é a quantidade de dígitos que estão no lugar correto.<br>
+            - O número antes de "B" é a quantidade dos que estão corretos, mas no lugar errado.<br>
+          </span>
           <p id="fim"></p>
+          <!--colocar imagem https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/shutterstock_647332669.jpg?itok=IpPnyFc7-->
         </div>
 
-        <div class="tabelaHistorico">
-          <table id="historico" class="center">
-            <tr>
-              <th>N°</th>
-              <th>Tentativa</th>
-              <th>Feedback</th>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
+        <div class="botoesETabela">
+            <button id="restart" onclick="RestartGame()" class="botoes">Recomeçar!</button>
+            <input type="text" id="escrever" maxlength="5" minlength="5" class="botoes">
+            <input type="submit" id="tentativa" onclick="Tries()" class="botoes">
+
+            <table id="historico" class="center">
+              <tr>
+                <th>N°</th>
+                <th>Tentativa</th>
+                <th>Feedback</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          
         </div>
     </main>
     

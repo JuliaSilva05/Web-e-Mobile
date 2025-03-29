@@ -9,15 +9,38 @@ header span{
     border: 0.25vw solid violet;
     border-radius: 3vw;
 }
+
 main{
+    display: flex;
     padding: 2vw;
-    display: block;
-    align-items: center;
-    color: blue;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.regras{
+    padding: 3vw;
+    color: violet;
+    -webkit-text-stroke-color: purple;
+    -webkit-text-stroke-width: 0.04vw;
+}
+.botoesETabela{
+    text-align: center;
+    padding: 3vw;
+    background-color: pink;
+    border-radius: 5vw;
+    border: 0.5vw groove violet;
+}
+.botoes{
+    background-color: white;
+    border: 0.25vw groove violet;
+    border-radius: 5vw;
+    color: violet;
 }
 table, th, td {
-    border: 0.125vw solid black;
+    color: purple;
+    border: 0.125vw groove violet;
     border-collapse: collapse;
+    margin-top: 1.5vw;
 }
 table.center{
     margin-left: auto;
