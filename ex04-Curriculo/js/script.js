@@ -25,12 +25,9 @@ function CreateNumber(){
     }
 }
 
-
-
 var nums = CreateNumber();
 const historico = [];
 var contando = 0;
-var reiniciar = true;
 
 function Tries(){
     // recebendo o input
@@ -45,12 +42,11 @@ function Tries(){
     // checando se o tamanho e os caracteres estão corretos
     if (inputTry.length == 5 && tudoCerto == 5){
         contando++;
-
         var resposta = [contando, inputTry, Feedback(inputTry,nums)]
-        
-        //historico.unshift(resposta[0],resposta[1],resposta[2]);
-        //console.log(historico);
         AddHistoric(resposta);        
+
+        const myImage = new Image(350, 250);
+        myImage.src = 'https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/shutterstock_647332669.jpg?itok=IpPnyFc7';
 
         if (resposta[2] == "5A0B"){
             document.getElementById("fim").innerHTML = "Parabéns! Você acertou.";
@@ -58,6 +54,7 @@ function Tries(){
             var x = document.getElementById("tentativa");
             if (x.style.display != "none") {
                 x.style.display = "none";
+                document.getElementById('bolo').appendChild(myImage);
             }
         }
         else if (contando == 10){
@@ -65,6 +62,7 @@ function Tries(){
             var x = document.getElementById("tentativa");
             if (x.style.display != "none") {
                 x.style.display = "none";
+                document.getElementById('bolo').appendChild(myImage);
             }
         }
     }

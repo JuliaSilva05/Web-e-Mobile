@@ -29,6 +29,7 @@ main{
     background-color: pink;
     border-radius: 5vw;
     border: 0.5vw groove violet;
+    position: static;
 }
 .botoes{
     background-color: white;
