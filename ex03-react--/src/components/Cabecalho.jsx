@@ -11,7 +11,7 @@ export function Cabecalho() {
 export function HomePage() {
     return (
       <div className="home-page-simple">
-        <h3>Bem-vindo ao RPG Ficha Fácil</h3>
+        <b>Bem-vindo ao RPG Ficha Fácil</b>
       </div>
     );
   }
