@@ -12,6 +12,7 @@ export function HomePage() {
     return (
       <div className="home-page-simple">
         <b>Bem-vindo ao RPG Ficha Fácil</b>
+        <p> O RPG Ficha Fácil é o melhor site para criar seu personagem de RPG! </p>
       </div>
     );
   }
