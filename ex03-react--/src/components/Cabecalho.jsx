@@ -7,3 +7,11 @@ export function Cabecalho() {
       </header>
     );
   }
+
+export function HomePage() {
+    return (
+      <div className="home-page-simple">
+        <h3>Bem-vindo ao RPG Ficha Fácil</h3>
+      </div>
+    );
+  }

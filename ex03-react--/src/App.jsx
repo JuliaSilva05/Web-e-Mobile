@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import "./App.css";
 import { Cabecalho } from "./components/Cabecalho";
+import { HomePage } from "./components/Cabecalho";
 
 function App() {
   const [contador, setContador] = useState(0);
