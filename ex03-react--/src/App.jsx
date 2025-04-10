@@ -37,6 +37,7 @@ function App() {
       <button onClick={handleBtIncrementarValorClick}>Incrementar Valor</button>
 
       <HomePage/>
+      <HomePage/>
     </>
   );
 }
