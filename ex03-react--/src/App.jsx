@@ -34,8 +34,11 @@ function App() {
         onChange={handleIncrementoChange}
       />
       <button onClick={handleBtIncrementarValorClick}>Incrementar Valor</button>
+
+      <HomePage/>
     </>
   );
 }
+
 
 export default App;
