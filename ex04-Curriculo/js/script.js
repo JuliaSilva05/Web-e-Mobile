@@ -49,7 +49,7 @@ function Tries(){
         myImage.src = 'https://www.assai.com.br/sites/default/files/styles/blog_destaque/public/blog/shutterstock_647332669.jpg?itok=IpPnyFc7';
 
         if (resposta[2] == "5A0B"){
-            document.getElementById("fim").innerHTML = "Parabéns! Você acertou.";
+            document.getElementById("fim").innerHTML = "Enquanto você estava resolvendo, ela te fez um bolo! Parabéns! Você acertou.";
             console.log("acertou!");
             var x = document.getElementById("tentativa");
             if (x.style.display != "none") {
@@ -58,7 +58,7 @@ function Tries(){
             }
         }
         else if (contando == 10){
-            document.getElementById("fim").innerHTML = "A senha era ".concat(nums);
+            document.getElementById("fim").innerHTML = "Enquanto você estava resolvendo, ela te fez um bolo! A senha era ".concat(nums);
             var x = document.getElementById("tentativa");
             if (x.style.display != "none") {
                 x.style.display = "none";
